@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Midterm</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div id="query" class="jumbotron">
+                <h1>Open Library</h1>
+                <p>Please enter the ISBN of the book you'd like to retreieve</p>
+                <form action="/" method="POST" onsubmit="searchISBN(); return false;">
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="isbn">ISBN</label>
+                        <div class="col-sm-4">
+                            <input class="form-control" type="text" placeholder="0" id="isbn">
+                        </div>
+                        <div class="col-sm-6">
+                            <button class="btn btn-primary" type="submit" id="submit">Query</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="result" class="flexbox">
+            </div>
+        </div>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
